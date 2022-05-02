@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Julia set generator</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.13.1/math.min.js"></script>    
+</head>
+
+<body>
+  <div id = "container" align="center">
+    <br>
+    <header>
+      <h1><img style="float:right" src="sci-lg-text-cze-black.png" alt="logo prava">JULIA SET GENERATOR<img style="float:left" src="muni-lg-rgb.png" alt="logo leva"></h1>
+      <div class="clearfix"></div>
+      <hr color="black">
+      <nav>
+        <ul>
+          <li><a  href="index.html">INTRODUCTION</a></li>
+          <li><a class="active" href="orbit.html">ORBIT</a></li>
+          <li><a href="mandelbrotVsJulia.html"><i>M</i> vs. <i> J</i></a></li>
+          <li><a href="juliaVsJulia.html"> <i>J</i> vs. <i> J</i></a></li>
+        </ul>
+        <div class="clearfix"></div>
+      </nav>
+    </header>
+  
+  <section> 
+    <br>
+    <div id="orbittext">
+      <button onclick="textO1()" id="textButtonO1">
+        <h3 align = justify>+ &emsp; Treshold radius</h3>
+      </button>
+      <span id="checkO1"></span>
+      <span id = moreTextO1>
+        <p id="odstavecO">
+          In the real world, it is impossible to calculate infinitely many iterations for the confident result whether the orbit diverges or not.
+          In practice, there exists the term <i>Threshold radius</i> $r(c)$ defined by the equation 
+          $$r(c) = max(2,|c|).$$
+          It is proven that if the magnitude of any $z_{k}$ in the orbit exceeds the $r(c)$ then the orbit diverges and thus its initial value is not in the Julia set. Moreover for the Mandelbrot set only $2$ is considered without counting $max(2,|c|)$.
+        </p>
+      </span>
+      <button onclick="textO3()" id="textButtonO3">
+        <h3 align = justify>+ &emsp; Behaviour of orbit</h3>
+      </button>
+      <span id="checkO3"></span>
+      <span id = moreTextO3>
+        <div id="odstavecO">
+          Orbits are divided into a few types by their behaviour:
+        <h5 id="nadpis">Converging</h5>
+          They converge to their fixed point. 
+          This type is located in the <i>cardioid</i> (heart-shaped part) of the Mandelbrot set.
+        <h5>Diverging</h5>
+          They diverge to infinity. This type is located outside the Mandelbrot set.
+        <h5>Periodic</h5>
+          The values of the orbit are repeated in the same order over and over again. 
+          There exists a special case of periodic orbit so-called <i>preperiodic</i> orbit, 
+          where the orbit becomes periodic after the first few values, which are not in the periodic cycle. 
+          Periodic orbits are located in the period-$n$ bulbs, where $n$ depends on the period of the orbit.
+        </div>
+      </span>
+      <button onclick="textO2()" id="textButtonO2">
+        <h3 align = justify>+ &emsp; Period of bulbs</h3>
+      </button>
+      <span id="checkO2"></span>
+      <span id = moreTextO2>
+        <p id="odstavecO">
+          On the boundary of the cardioid are attached infinitely many disks usually called <i>bulbs</i> and then other bulbs are again attached to them etc. Because the critical orbit of $c$
+          from any bulb is periodic, the name bulb is specified by the period of this orbit as  the <i>period-$n$</i> bulb. <br>
+          This part of the application mainly focuses on the interesting fact that the critical orbit of $c$ chosen from
+          some part of the Mandelbrot set corresponds to the period of the orbit of the initial value chosen inside the Julia set 
+          generated for the same $c$.
+        </p>
+      </span>
+      <button onclick="textO()" id="textButtonO">
+        <h3 align = justify>+ &emsp; Description</h3>
+      </button>
+      <span id="checkO"></span>
+      <span id = moreTextO>
+        <p id="odstavecO">
+          By moving the cursor on the upper (bottom) screen the exact coordinates of the cursor are shown in the box in the left bottom (upper) corner of a panel and then in the middle of the bottom panel
+          application returns the behaviour of an orbit with the initial value chosen by the cursor. 
+          After the click on any location in the upper screen, the critical orbit is drawn for the $c$ selected by cursor position. 
+          Then the <i>Reset orbit</i> button clears all rendered orbits. <br> 
+          Selected $c$ is also automatically saved to the $c$ coordinates in the bottom screen for generating the Julia set using the <i>Generate</i> button.
+          Because of that property, there is a possibility of comparing the Mandelbrot set and the Julia sets orbits for the same $c$.
+          If the users do not want to use the pre-saved value $c$, they can enter any value manually.
+        </p>
+      </span>
+    </div> 
+<br> 
+ <div class="mandel_canvas">
+    <label for="orbitM"><h4 id="nadpisO">Mandelbrot set</h4></label> 
+      <canvas class="orbitM" width="650" height="650">The browser doesn't support the canvas element</canvas>   
+      <div id="res"><button id="reset">Reset orbit</button></div>
+      <canvas class="coordinates" width="150" height="30"></canvas>
+      <canvas class="pertext" width="163" height="30"></canvas>
+      <canvas class="per" width="120" height="30"></canvas>
+      <div class="clearfix"></div>
+  </div>
+<br>
+  <div class="julia_canvas">
+    <label for="orbitJ"><h4 id="nadpisO">Julia set</h4></label>
+    <div id="souradniceC">
+    <input type="text" id="souradnice1" placeholder="Re part of c"> 
+    <input type="text" id="souradnice2" placeholder="Ima part of c"> 
+    </div>
+    <canvas class="coordinatesJ1" width="150" height="30"></canvas>
+    <div id="gen"><button id="butt">generate</button></div>
+    <div class="clearfix"></div>
+    <canvas class="orbitJ" width="650" height="650">The browser doesn't support the canvas element</canvas><br>
+    <canvas class="pertext1" width="163" height="30"></canvas>
+    <canvas class="per1" width="120" height="30"></canvas>
+    <div id="res"><button id="reset1">Reset orbit</button></div>
+    <div class="clearfix"></div>
+  </div>
+  <script src="juliaO.js"></script>
+  <script src="mandelbrotO.js"></script>
+  <script src="roll.js"></script>
+  </section>
+  </div>
+</body>
+
+<footer>
+  <p class="copyright">© Jan Macharáček 2022</p>
+</footer>
+</html>
