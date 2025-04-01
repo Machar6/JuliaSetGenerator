@@ -1,0 +1,9 @@
+Tento textový dokument slouží jako průvodce přílohou.
+
+obrazky - pár příkladů Juliových množin vygenerovaných ve vysokém rozlišení a barevném provedí
+web_html - soubory .html dokumentů jednotlivých částí webové aplikace
+web_js - všechny zdrojové kódy v jazyce JavaScript využité ve webové aplikaci
+sierpinskiTriangle - zdrojový kód v jazyce JavaScript využitý pro vygenerování Sierpińského trojúhelníka v kapitole Základní pojmy.
+style - soubor CSS vužitý pro naformátování webové aplikace
+
+Pro funkčnost aplikace ještě příloha obsahuje složku web_obr, skládající se z log MUNI nacházející se v hlavičce aplikace a kurzoru využitém při operacích s plátny. Tato složka není uvedena v seznamu příloh bakalářské práce z důvodu její nedůležitosti v kontextu celé práce.
