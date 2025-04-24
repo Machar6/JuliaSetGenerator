@@ -1,3 +1,5 @@
+# Julia Set Generator
+
 *Julia set generator* is a web application programmed for visualization of the Julia sets by various methods and demonstration of their properties using computer graphics.
 
 The application consists of four parts. The introduction part helps familiarize with the basics of the Julia sets and the Mandelbrot set. The second part is called the orbit and 
