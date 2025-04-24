@@ -1,11 +1,9 @@
 # Julia Set Generator
 
-*Julia set generator* is a web application programmed for visualization of the Julia sets by various methods and demonstration of their properties using computer graphics.
+*Julia set generator* is a web application designed for the visualization of Julia sets using various computational methods and the demonstration of their mathematical properties through computer graphics. The application allows users to explore how different complex parameters `c` affect the structure of Julia sets and to experiment with multiple rendering techniques, and orbit analysis. It serves not only as a tool for generating visually striking fractals, but also as an educational platform for understanding complex dynamics, iteration processes, and the deep connection between Julia sets and the Mandelbrot set. By providing interactive features and side-by-side comparisons, the application offers insight into the behavior of complex functions and supports learning, teaching, and further exploration of fractal geometry.
 
-The application consists of four parts. The introduction part helps familiarize with the basics of the Julia sets and the Mandelbrot set. The second part is called the orbit and 
-describes the principle of whether the point lies in the (Julia or Mandelbrot) set or not and also demonstrates the connection in orbit behaviour between the Mandelbrot set and 
-the Julia sets. The part named *M vs. J* focuses on one of the most famous results, their connection based on the fundamental dichotomy. *J vs. J* is the last part of the application which is useful 
-for comparison of visualization methods from different points of view.
+Feel free to explore the code, run the application, and customize it to suit your needs.  
+**Contributions and feedback are welcome!**
 
 # Fundamentals 
 
