@@ -179,7 +179,7 @@ var imgData = kontext1.createImageData(canvas1.width,canvas1.height);
 //Zadefinování proměnných pro funkce
 var cxGaussJ; 
 var cyGaussJ;
-var maxIter1 = 255;
+var maxIter1 = 1000;
 var zxN1
 var zyN1
 var cmaxX1 = 2;

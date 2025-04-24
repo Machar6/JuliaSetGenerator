@@ -72,11 +72,11 @@ function draw_DEM(event)
       dzx2 = dzx*dzx;
       dzy2 = dzy*dzy;
       var d = 2*(Math.sqrt(zx2 + zy2)*Math.log(Math.sqrt(zx2 + zy2)))/Math.sqrt(dzx2 + dzy2);//2*modulus(z)*log(modulus(z))/modulus(dz)
-      var input = - 20*Math.log(d);
+      var input = - 15*Math.log(d);
       var idx = (x+y*canvas.width) * 4;
-      imgData.data[idx + 0] = 255-input; 
-      imgData.data[idx + 1] = 255-input; 
-      imgData.data[idx + 2] = 255-input; 
+      imgData.data[idx + 0] = input; 
+      imgData.data[idx + 1] = input; 
+      imgData.data[idx + 2] = input; 
       imgData.data[idx + 3] = 255;
     }
   } kontext.putImageData(imgData, 0, 0);
@@ -149,12 +149,12 @@ function draw_ETA(event)
           zxGauss = (zx2 - zy2) + cxComplex;
           iter++;
         }
-        var input = 256 - 256*iter/(100);
+        var input = 255 - 255*iter/(100);
         var pozice = (x+y*canvas.width) * 4;
         imgData.data[pozice + 0] = input; 
         imgData.data[pozice + 1] = input; 
         imgData.data[pozice + 2] = input; 
-        imgData.data[pozice + 3] = 256;
+        imgData.data[pozice + 3] = 255;
    }    
   }kontext.putImageData(imgData, 0, 0);
 }

@@ -20,8 +20,7 @@ var canvasMvsJ = document.getElementsByClassName('coordinatesMvsJ')[0];
 var kontextMvsJ = canvasMvsJ.getContext('2d');
 
 //zadefinování proměnných pro funkci
-var ratio = canvas1.height/canvas1.width;
-var maxIter1 = 256;
+var maxIter1 = 255;
 var zxN, zyN;
 var cmaxX1 = 1.8;
 var posunXcomplex = 0.5;

@@ -73,7 +73,6 @@ var canvasper = document.getElementsByClassName("per")[0];
 var kontextper = canvasper.getContext("2d");
 kontextper.font = "15px verdana";
 //Zadefinování proměnných pro funkce
-var ratio = canvas.height / canvas.width;
 var maxIter = 255;
 var zxN, zyN;
 var cmaxX = 1.5;

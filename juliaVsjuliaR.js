@@ -66,7 +66,7 @@ function draw_dem1(event)
     dzx2 = dzx*dzx;
     dzy2 = dzy*dzy;
     var d = 2*(Math.sqrt(zx2 + zy2)*Math.log(Math.sqrt(zx2 + zy2)))/Math.sqrt(dzx2 + dzy2);//2*modulus(z)*log(modulus(z))/modulus(dz)
-    var input = - 20*Math.log(d);
+    var input = - 15*Math.log(d);
     var idx = (x+y*canvas.width) * 4;
     imgData.data[idx + 0] =input; 
     imgData.data[idx + 1] =input; 
@@ -175,7 +175,7 @@ function stopwatch31()
 var cxGauss1;
 var cyGauss1;
 var z0;
-var maxIter1 = 256;
+var maxIter1 = 255;
 var maxIter = 17;
 var zCR = []; 
 var zCI = []; 
