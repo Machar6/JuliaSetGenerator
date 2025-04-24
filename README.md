@@ -44,22 +44,22 @@ This part serves as an entry point into the world of complex dynamics. It introd
 The *Orbit* section explores the core idea of how points behave under repeated iteration of a function. It answers the question of whether a point lies inside or outside of the Julia or Mandelbrot set by analyzing the *orbit* of that point. This section visually demonstrates how the sequence `z_0, z_1, z_2, ...` evolves and diverges or remains bounded. A key insight presented here is the connection between the orbit of `z_0 = 0` in the Mandelbrot set and the behavior of corresponding Julia sets.
 
 Scripts:
-- [juliaO.js](https://github.com/Machar6/FractalGenerator/blob/main/juliaO.js)
-- [mandelbrotO.js](https://github.com/Machar6/FractalGenerator/blob/main/mandelbrotO.js)
+- [juliaO.js](https://github.com/Machar6/JuliaSetGenerator/blob/main/juliaO.js)
+- [mandelbrotO.js](https://github.com/Machar6/JuliaSetGenerator/blob/main/mandelbrotO.js)
 
 ## M vs. J ([mandelbrotVsJulia.html](https://github.com/Machar6/JuliaSetGenerator/blob/main/mandelbrotVsJulia.html))
 
 This part focuses on the deep relationship between the Mandelbrot set (denoted as *M*) and the family of Julia sets (denoted as *J*). It showcases one of the central results in complex dynamics — the *fundamental dichotomy*. Specifically, it illustrates how the Mandelbrot set acts as a "map" or "catalogue" that determines the structure of each corresponding Julia set. For values of `c` inside the Mandelbrot set, the Julia set is connected; for values of `c` outside, the Julia set is totally disconnected (a dust of points).
 
 Scripts:
-- [juliaMJ.js](https://github.com/Machar6/FractalGenerator/blob/main/juliaMJ.js)
-- [mandelbrotMJ.js](https://github.com/Machar6/FractalGenerator/blob/main/mandelbrotMJ.js)
+- [juliaMJ.js](https://github.com/Machar6/JuliaSetGenerator/blob/main/juliaMJ.js)
+- [mandelbrotMJ.js](https://github.com/Machar6/JuliaSetGenerator/blob/main/mandelbrotMJ.js)
 
 ## J vs. J ([JuliaVsJulia.html](https://github.com/Machar6/JuliaSetGenerator/blob/main/mandelbrotVsJulia.html))
 
 The final section, *J vs. J*, is dedicated to comparing different Julia sets and different methods of visualizing them. Users can interactively explore how small changes in the parameter `c` affect the shape and connectivity of Julia sets. It also allows side-by-side comparison of rendering techniques (Escape time algorithm, Distance estimation method and Inverse iteration method), highlighting their strengths and limitations. This part is particularly useful for deeper exploration and understanding of visual patterns and for evaluating computational methods.
 
 Scripts:
-- [JuliaVsJuliaL.js](https://github.com/Machar6/FractalGenerator/blob/main/JuliaVsJuliaL.js) (All implemented methods used for visualizing Julia sets)
-- [JuliaVsJuliaR.js](https://github.com/Machar6/FractalGenerator/blob/main/JuliaVsJuliaR.js)
+- [JuliaVsJuliaL.js](https://github.com/Machar6/JuliaSetGenerator/blob/main/JuliaVsJuliaL.js) (All implemented methods used for visualizing Julia sets)
+- [JuliaVsJuliaR.js](https://github.com/Machar6/JuliaSetGenerator/blob/main/JuliaVsJuliaR.js)
 
