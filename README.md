@@ -60,6 +60,6 @@ Scripts:
 The final section, *J vs. J*, is dedicated to comparing different Julia sets and different methods of visualizing them. Users can interactively explore how small changes in the parameter `c` affect the shape and connectivity of Julia sets. It also allows side-by-side comparison of rendering techniques (Escape time algorithm, Distance estimation method and Inverse iteration method), highlighting their strengths and limitations. This part is particularly useful for deeper exploration and understanding of visual patterns and for evaluating computational methods.
 
 Scripts:
-- [JuliaVsJuliaL.js](https://github.com/Machar6/JuliaSetGenerator/blob/main/juliaVsjuliaL.js) (All implemented methods used for visualizing Julia sets)
+- [JuliaVsJuliaL.js](https://github.com/Machar6/JuliaSetGenerator/blob/main/juliaVsjuliaL.js) (All implemented rendering techniques used for visualizing Julia sets)
 - [JuliaVsJuliaR.js](https://github.com/Machar6/JuliaSetGenerator/blob/main/juliaVsjuliaR.js)
 
